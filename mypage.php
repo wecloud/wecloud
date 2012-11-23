@@ -148,8 +148,6 @@ $smallavaparcing = 'http://'.$baseurl.'/userupload/uploads/'.$smallavaparcing;
 <body>
 <div id="topbar"> 
 <div id="container">
-<div id="wb_Image9">
-<img src="images/button_submit.png" id="Image9" alt="" border="0"></div>
 <div id="wb_Image5">
 <img src="images/top_background.png" id="Image5" alt="" border="0"></div>
 
@@ -164,20 +162,14 @@ $smallavaparcing = 'http://'.$baseurl.'/userupload/uploads/'.$smallavaparcing;
 <a href="<?echo 'http://'.$baseurl;?>">
 <img src="images/logo.png" id="Image6" alt="" border="0"><? echo ($showuser['user_login']) ?></div>
 </a>
-<div id="wb_Text1">
-<span id="wb_uid0">Главная</span></div>
-<div id="wb_Text2">
-<span id="wb_uid1">Профиль</span></div>
-<div id="wb_Text3">
-<span id="wb_uid2"><a href="logout.php?id=<?echo $_COOKIE['id']?>"><div style="color: #ffffff">Выход</div></a></span></div>
-<div id="wb_Image7">
-<img src="images/point.png" id="Image7" alt="" border="0"></div>
-<div id="wb_Image8">
-<img src="images/point.png" id="Image8" alt="" border="0"></div>
+
 <div id="wb_Text4">
 <span id="wb_uid3">Настройки</span></div>
 <div id="wb_Image10">
 <img src="images/button_settings.png" id="Image10" alt="" border="0"></div>
+<div id="topmenu" style="position:absolute; right: 10px;">
+    <iframe src="modules/topmenu.php" frameborder="no"></iframe>
+</div>
 <div id="wb_Form2">
 <form name="save" method="post" action="mypage.php" id="Form2">
 <input type="hidden" name="page_id" value="">
